@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pg模拟器 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f1f3f5;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* hero */
+        .hero {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0,0,0,0.02);
+            padding: 2.5rem 2rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0b1e33;
+            margin-bottom: 0.6rem;
+        }
+        .hero .subhead {
+            font-size: 1.05rem;
+            color: #475569;
+            max-width: 680px;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 1.6rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e9edf0;
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+        }
+        .card h2 {
+            font-size: 1.45rem;
+            font-weight: 500;
+            margin-bottom: 0.9rem;
+            color: #1e2b3a;
+            border-left: 4px solid #6f8ca5;
+            padding-left: 0.8rem;
+        }
+        .card p,
+        .card li {
+            color: #2c3e50;
+            font-size: 0.98rem;
+        }
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .card ul li {
+            padding: 0.35rem 0 0.35rem 1.6rem;
+            position: relative;
+        }
+        .card ul li::before {
+            content: "·";
+            position: absolute;
+            left: 0.4rem;
+            color: #6f8ca5;
+            font-weight: bold;
+        }
+
+        /* 特点网格 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 0.6rem;
+        }
+        .feature-item {
+            background: #f8fafc;
+            border-radius: 14px;
+            padding: 1rem 1.2rem;
+            border: 1px solid #e2e8f0;
+        }
+        .feature-item strong {
+            display: block;
+            font-weight: 600;
+            color: #0f2a41;
+            margin-bottom: 0.2rem;
+        }
+        .feature-item span {
+            font-size: 0.9rem;
+            color: #4a5a6e;
+        }
+
+        .link-embed {
+            background: #f7f9fc;
+            padding: 1.1rem 1.6rem;
+            border-radius: 16px;
+            border: 1px solid #e1e7ed;
+            margin: 1.2rem 0 0.4rem;
+        }
+        .link-embed a {
+            color: #1d4a6f;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #b6cbd9;
+        }
+        .link-embed a:hover {
+            border-bottom-color: #1d4a6f;
+        }
+
+        .faq-item {
+            margin: 0.8rem 0;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #1b3144;
+            margin-bottom: 0.1rem;
+        }
+
+        .footer-note {
+            text-align: center;
+            color: #5c6b7a;
+            font-size: 0.85rem;
+            padding: 1.8rem 0 0.6rem;
+            border-top: 1px solid #dce2e8;
+            margin-top: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .hero { padding: 1.8rem 1.2rem; }
+            .hero h1 { font-size: 1.7rem; }
+            .card { padding: 1.4rem 1.2rem; }
+            .feature-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero -->
+    <div class="hero">
+        <h1>pg模拟器 · 产品说明</h1>
+        <div class="subhead">
+            面向模拟器使用场景的轻量界面聚合终端，定位在快速调取、配置参考与信息归整。本页整理 <a href="https://panel-pocketgamessoft.com" style="color:#1d4a6f;text-decoration:underline;">pg模拟器</a> 的主要特点与适用情境，供新用户或评估者参考。
+        </div>
+    </div>
+
+    <!-- 摘要 -->
+    <div class="card">
+        <h2>▎概览摘要</h2>
+        <p><strong>pg模拟器</strong> 并非单一模拟器程序，而是围绕模拟器操作场景构建的一套面板式工具集合。它整合了常见的模拟器启动、参数快调、存档管理以及界面布局调整等模块，降低在多窗口与模拟器之间频繁切换的成本。整体设计倾向于「在统一面板下完成多数调整」，减少记忆复杂指令的负担。</p>
+        <p style="margin-top:0.7rem;">如果你已熟悉独立模拟器但希望获得更集中的操作入口，或想要一个相对整齐的界面来管理多个模拟任务，这个工具值得花十几分钟试一下基础流程。</p>
+    </div>
+
+    <!-- 亮点 / 特点 -->
+    <div class="card">
+        <h2>▎几点设计亮点</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <strong>快捷操作板</strong>
+                <span>常用功能（保存／读档、速度切换、截图）集中在左侧栏，不用层层点菜单。</span>
+            </div>
+            <div class="feature-item">
+                <strong>场景预设</strong>
+                <span>可按不同游戏或测试环境保存窗口布局、键位映射、滤镜参数，一键切换。</span>
+            </div>
+            <div class="feature-item">
+                <strong>配置导出</strong>
+                <span>所有面板设置可导出为独立文件，方便备份或迁移到其他设备。</span>
+            </div>
+            <div class="feature-item">
+                <strong>低侵入</strong>
+                <span>不修改模拟器核心文件，只在面板层做调用，卸载面板不影响原有模拟器。</span>
+            </div>
+        </div>
+        <p style="margin-top:1.1rem; font-size:0.95rem;">以上特点基于 <a href="https://panel-pocketgamessoft.com" style="color:#1d4a6f;text-decoration:underline;">pg模拟器</a> 当前稳定版本整理，具体行为以实际面板为准。</p>
+    </div>
+
+    <!-- 使用建议 / 场景 -->
+    <div class="card">
+        <h2>▎适合哪些场景</h2>
+        <ul>
+            <li><strong>日常测试与调试</strong> —— 频繁修改模拟器参数（如跳帧、分辨率、音频延迟）时，面板的实时滑块比逐项翻菜单更高效。</li>
+            <li><strong>多模拟器混合使用</strong> —— 同时运行两种以上模拟器（例如 RetroArch、PPSSPP、DuckStation），面板可统一管理窗口位置和退出热键。</li>
+            <li><strong>给模拟器做轻度配置记录</strong> —— 针对不同游戏保存独立配置集，避免每次手动调整键位或画面比例。</li>
+            <li><strong>直播或录制场景</strong> —— 快速切换显示滤镜、锁定帧率、隐藏／显示操作界面，减少画面干扰。</li>
+        </ul>
+        <div class="link-embed">
+            💡 如果你正寻找一个能提升模拟器操作效率的辅助层，不妨花几分钟看看 <a href="https://panel-pocketgamessoft.com">pg模拟器</a> 的界面截图和功能列表，判断是否符合你的使用习惯。
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 —— 克制版本 -->
+    <div class="card">
+        <h2>▎常见疑问 · 摘要</h2>
+        <div class="faq-item">
+            <strong>这个面板会修改模拟器本体吗？</strong>
+            <p>不会。面板只通过 IPC 或命令行参数与模拟器通信，不替换或注入文件。卸载面板后模拟器保持原样。</p>
+        </div>
+        <div class="faq-item">
+            <strong>是否需要注册或登录才能使用？</strong>
+            <p>基础面板功能无需账户。部分同步或云端备份功能可能要求可选登录，但本地核心功能完全离线可用。</p>
+        </div>
+        <div class="faq-item">
+            <strong>对模拟器版本有要求吗？</strong>
+            <p>主流模拟器（RetroArch、PCSX2、RPCS3、Yuzu、Citra、PPSSPP 等）的近期版本均支持。极老版本可能缺少必要接口，建议更新模拟器至 2023 年后版本。</p>
+        </div>
+        <p style="margin-top:0.8rem; font-size:0.9rem; color:#4a5a6e;">更完整 FAQ 请直接访问 <a href="https://panel-pocketgamessoft.com" style="color:#1d4a6f;">pg模拟器</a> 内的帮助章节。</p>
+    </div>
+
+    <!-- 访问说明 —— 可信且克制 -->
+    <div class="card">
+        <h2>▎关于访问与使用</h2>
+        <p><a href="https://panel-pocketgamessoft.com">pg模拟器</a> 为免费工具面板，无隐藏计费模块。项目持续维护但非商业化运营，更新频率约为每月 1~2 次。首次使用时建议完整阅读面板内的「快速入门」浮层，了解默认热键与布局逻辑。</p>
+        <p style="margin-top:0.6rem;">如果你对面板的任何行为有疑问，或发现与模拟器兼容性问题，可通过网站提供的反馈渠道提交描述（建议附带面板日志与模拟器版本号）。维护者会在后续版本中评估调整。</p>
+    </div>
+
+    <div class="footer-note">
+        页面内容仅为产品说明，不构成任何性能承诺或担保。<br>
+        所有提及的模拟器名称均为其各自所有者的商标。
+    </div>
+</div>
+</body>
+</html>
